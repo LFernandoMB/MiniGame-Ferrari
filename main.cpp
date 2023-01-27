@@ -16,10 +16,10 @@ COORD CursorPosition;
 int enemyY[3];
 int enemyX[3];
 int enemyFlag[3];
-char car[4][4] = { ' ','±','±',' ', 
-					'±','±','±','±', 
-					' ','±','±',' ',
-					'±','±','±','±' }; 
+char car[4][4] = { ' ','◙','◙',' ', 
+		  '◙','◙','◙','◙', 
+		  ' ','◙','◙',' ',
+		  '◙','◙','◙','◙' }; 
 					
 int carPos = WIN_WIDTH/2;
 int score = 0; 
@@ -136,11 +136,11 @@ void play(){
 	genEnemy(0);
 	genEnemy(1);
 	
-	gotoxy(WIN_WIDTH + 7, 2);cout<<"Car Game";
-	gotoxy(WIN_WIDTH + 6, 4);cout<<"----------";
-	gotoxy(WIN_WIDTH + 6, 6);cout<<"----------";
-	gotoxy(WIN_WIDTH + 7, 12);cout<<"Control ";
-	gotoxy(WIN_WIDTH + 7, 13);cout<<"-------- ";
+	gotoxy(WIN_WIDTH + 7, 2);cout<<"Ferrari Car Game";
+	gotoxy(WIN_WIDTH + 6, 4);cout<<"----------------- ";
+	gotoxy(WIN_WIDTH + 6, 6);cout<<"----------------- ";
+	gotoxy(WIN_WIDTH + 7, 12);cout<<"Controls ";
+	gotoxy(WIN_WIDTH + 7, 13);cout<<"---------------- ";
 	gotoxy(WIN_WIDTH + 2, 14);cout<<" A Key - Left";
 	gotoxy(WIN_WIDTH + 2, 15);cout<<" D Key - Right"; 
 	
@@ -206,9 +206,9 @@ int main()
 	 
 	do{
 		system("cls");
-		gotoxy(10,5); cout<<" -------------------------- "; 
-		gotoxy(10,6); cout<<" |        Car Game        | "; 
-		gotoxy(10,7); cout<<" --------------------------";
+		gotoxy(10,5); cout<<" --------------------------------- "; 
+		gotoxy(10,6); cout<<" |        Ferrari Car Game        | "; 
+		gotoxy(10,7); cout<<" ---------------------------------";
 		gotoxy(10,9); cout<<"1. Start Game";
 		gotoxy(10,10); cout<<"2. Instructions";	 
 		gotoxy(10,11); cout<<"3. Quit";
